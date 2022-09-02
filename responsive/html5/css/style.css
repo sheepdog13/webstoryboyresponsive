@@ -3,20 +3,15 @@ body {background: url(../img/header_bg.jpg) repeat-x center top;}
 #header {}
 #nav {background-color: #f6fdff;}
 #title {background-color: #eaf7fd;}
-#contents { }
-#contents .container {
-    border-right: 1px solid #dbdbdb;
-    border-left: 1px solid #dbdbdb;
- }
+#contents .container {border-right: 1px solid #dbdbdb; border-left: 1px solid #dbdbdb;}
 #cont_left {float: left; width: 250px;}
 #cont_center {
-    overflow: hidden;
-    min-height: 1300px; margin-right: 250px;
+    overflow: hidden; min-height: 1300px; margin-right: 250px;
     border-right: 1px solid #dbdbdb;
     border-left: 1px solid #dbdbdb;
 }
-#cont_right { position: absolute; top: 0; right: 0; width: 250px;}
-#footer {border-top: 1px solid #dbdbdb; }
+#cont_right {position: absolute; right: 0; top: 0; width: 250px;}
+#footer {border-top: 1px solid #dbdbdb;} 
 
 /* 컨테이너 */
 .container {position: relative; width: 1200px; margin: 0 auto; /*background: rgba(0, 0, 0, 0.3);*/}
@@ -227,6 +222,16 @@ body {background: url(../img/header_bg.jpg) repeat-x center top;}
     position: absolute; left: 0; top: 6px;
 }
 
+/* 블로그1 */
+.blog1 img {width: 100%; }
+.blog1 .img-retina {display: none;}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+        only screen and (min-device-pixel-ratio: 1.5),
+        only screen and (min-resolution: 1.5dppx) {
+        .blog1 .img-retina {display: initial;}
+        .blog1 .img-normal {display: none;}
+}
 /* mddiaquery */
 
 /* 화면 너비 0 ~ 1220px */
