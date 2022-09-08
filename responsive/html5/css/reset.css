@@ -27,7 +27,7 @@ img, fieldset {border: 0 none;}
 button {border: 0;}
 
 /* 반응형 이미지 */
-img {width: 100%;}
+img, video {width: 100%;}
 
 /* clearfix */
 .clearfix{*zoom:1;}
